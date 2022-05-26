@@ -15,7 +15,7 @@ class _AddDataState extends State<AddData> {
   TextEditingController controllerTahunKeluar = new TextEditingController();
 
   void addData(){
-    var url = "http://192.168.1.20:8080/api/api_pendidikan/";
+    var url = "http://192.168.43.35:8080/api/api_pendidikan/";
 
     http.post(Uri.parse(url), body:{
       "nama" : controllerNama.text,

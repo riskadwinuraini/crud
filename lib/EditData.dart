@@ -22,7 +22,7 @@ class _EditDataState extends State<EditData>{
 
   void editData() async{
     http.put(
-      Uri.parse('http://192.168.1.20:8080/api/api_pendidikan/' + widget.list[widget.index]['id'].toString()),
+      Uri.parse('http://192.168.43.35:8080/api/api_pendidikan/' + widget.list[widget.index]['id'].toString()),
       headers: {
         'Accept' : 'application/json',
       },

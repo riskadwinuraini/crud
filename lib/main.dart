@@ -23,7 +23,7 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   Future<List> getData() async {
     final response =
-    await http.get(Uri.parse('http://192.168.1.20:8080/api/api_pendidikan'));
+    await http.get(Uri.parse('http://192.168.43.35:8080/api/api_pendidikan/'));
     return json.decode(response.body);
   }
 

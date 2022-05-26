@@ -16,7 +16,7 @@ class Detail extends StatefulWidget{
 
 class _DetailState extends State <Detail>{
   void deleteData(){
-    var url = 'http://192.168.1.20:8080/api/api_pendidikan/';
+    var url = 'http://192.168.43.35:8080/api/api_pendidikan/';
     http.delete(Uri.parse(url + widget.list[widget.index]['id'].toString()),
     body: {
       'id' : widget.list[widget.index]['id'].toString()
